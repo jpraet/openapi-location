@@ -21,4 +21,4 @@ definitions:
     description: Street code assigned by National Registry
     type: integer
     minimum: 1
-    pattern: 9999
+    maximum: 9999
