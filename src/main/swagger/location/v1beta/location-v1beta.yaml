@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: types related to location
-  version: v1beta
+  version: ${project.version}-beta
   #=> to debate: do we define CountryIso3166Alpha2Code?  or NationalityIsoCode?
 paths: {}
 definitions:
