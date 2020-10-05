@@ -13,7 +13,7 @@ components:
       type: string
       pattern: '^[A-Z]{2}$'
     # TODO: other location types ~ BEST format and NR format
-    StreetNrCode:
+    StreetRrnCode:
       description: Street code assigned by National Registry
       type: integer
       minimum: 1
