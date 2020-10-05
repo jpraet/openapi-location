@@ -11,12 +11,6 @@ definitions:
     type: string
     pattern: "^[A-Z]{2}$"
   # TODO: other location types ~ BEST format and NR format
-  MunicipalityCode:
-    description: Numeric code to identify a Belgian municipality  
-    #municipality codes are the same in BeSt address and NIS code list
-    type: integer
-    minimum: 10000 
-    maximum: 99999
   StreetNrCode:
     description: Street code assigned by National Registry
     type: integer

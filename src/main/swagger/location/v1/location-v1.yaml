@@ -9,3 +9,9 @@ definitions:
     type: integer
     minimum: 100
     maximum: 999
+  MunicipalityCode:
+    description: Numeric code to identify a Belgian municipality  
+    #municipality codes are the same in BeSt address and NIS code list
+    type: integer
+    minimum: 10000 
+    maximum: 99999
