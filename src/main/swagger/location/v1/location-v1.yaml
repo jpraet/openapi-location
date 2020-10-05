@@ -15,3 +15,10 @@ definitions:
     type: integer
     minimum: 10000 
     maximum: 99999
+  BelgianRegionCode:
+    description: Belgian Region represented by an ISO 3166-2:BE code
+    type: string
+    enum: 
+      - BE-BRU
+      - BE-WAL
+      - BE-VLG
