@@ -22,3 +22,16 @@ definitions:
       - BE-BRU
       - BE-WAL
       - BE-VLG
+  CountryIsoCode:
+    description: Country represented by an ISO 3166-1 alpha-2 code
+    type: string
+    pattern: "^[A-Z]{2}$"
+  CountryWithHistoricIsoCode:
+    description: Country represented by an ISO 3166-1 alpha-2 (current country) or ISO 3166-3 alpha-4 (former country) code
+    type: string
+    pattern: "^[A-Z]{2}([A-Z]{2})?$"
+  StreetRrnCode:
+    description: Street code assigned by National Registry  #not part of BeST address
+    type: integer
+    minimum: 1
+    maximum: 9999

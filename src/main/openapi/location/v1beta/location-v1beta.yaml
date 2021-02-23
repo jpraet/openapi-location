@@ -2,22 +2,8 @@ openapi: 3.0.0
 info:
   title: types related to location
   version: ${project.version}-beta
-  #=> to debate: do we define CountryIso3166Alpha2Code?  or NationalityIsoCode?
 servers: []
 paths: {}
 components:
-  schemas:
-    CountryIsoCode:
-      description: Country represented by an ISO 3166-1 alpha-2 code
-      type: string
-      pattern: "^[A-Z]{2}$"
-    CountryWithHistoricIsoCode:
-      description: Country represented by an ISO 3166-1 alpha-2 (current country) or ISO 3166-3 alpha-4 (former country) code
-      type: string
-      pattern: "^[A-Z]{2}([A-Z]{2})?$"
+  schemas: {}
     # TODO: other location types ~ BEST format and NR format
-    StreetRrnCode:
-      description: Street code assigned by National Registry
-      type: integer
-      minimum: 1
-      maximum: 9999
