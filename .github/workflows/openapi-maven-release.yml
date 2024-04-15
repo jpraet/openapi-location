@@ -39,9 +39,9 @@ jobs:
         - [placeholder]" "${SWAGGER_ARTIFACT_FILE}#${SWAGGER_ARTIFACT_NAME}" "${OPENAPI_ARTIFACT_FILE}#${OPENAPI_ARTIFACT_NAME}"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#    - name: Publish to Maven Central
-#      env:
-#        OPENAPI_OSSRH_USERNAME: ${{ secrets.OPENAPI_OSSRH_USERNAME }}
-#        OPENAPI_OSSRH_TOKEN: ${{ secrets.OPENAPI_OSSRH_TOKEN }}
-#        OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD: ${{ secrets.OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD }}
-#      run: mvn -B deploy
+    - name: Publish to Maven Central
+      env:
+        OPENAPI_OSSRH_USERNAME: ${{ secrets.OPENAPI_OSSRH_USERNAME }}
+        OPENAPI_OSSRH_TOKEN: ${{ secrets.OPENAPI_OSSRH_TOKEN }}
+        OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD: ${{ secrets.OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD }}
+      run: mvn -B deploy
